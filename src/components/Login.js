@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 // import { Redirect } from 'react-router'
-import {
-  TextField,
-  Button,
-  Container
-} from '@material-ui/core'
+import { TextField, Button, Container } from '@material-ui/core';
+
+import ProfileContainer from '../containers/ProfileContainer';
 
 class App extends Component {
   state = {
@@ -51,6 +49,7 @@ class App extends Component {
               variant="contained"
               color="primary">Login</Button>
           </form>
+        <ProfileContainer />
         </Container>
       </div>
     );
